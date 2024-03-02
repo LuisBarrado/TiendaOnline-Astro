@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../layouts/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Tienda Samsung">
+	<main>
+		<Header></Header>
+		<h1><span class="text-gradient">Galaxy S23</span>, el móvil que acerca el futuro a tus manos</span></h1>
+		<h1><span class="text-gradient">Modelos</span></h1>
+		<div class="Modelos">
+		
+	<div class="modelo"> 
+		<h2>Samsung Galaxy S23</h2>
+		<img src="public/S23.jpg" alt="S23"> <br>
+		<label for="samsung1">Almacenamiento:</label>
+		<select name="" id="opcion-S" >
+			<option value="1S">8GB | 128GB</option>
+			<option value="2S">8GB | 256GB</option>
+		</select>
+		<br>
+		<label for="precio-1S">Precio Opción 1: 590 € </label> <br>
+		<label for="precio-2S">Precio Opción 2: 630 €</label>
+	</div>
+	
+	<div class="modelo">
+		<h2>Samsung Galaxy S23+</h2>
+		<img src="public/S23+.jpg" alt="S23+"> <br>
+		<label for="samsung2">Almacenamiento:</label>
+		<select name="" id="opcion-S+">
+			<option value="1+">8GB | 256GB</option>
+			<option value="2+">8GB | 512GB</option>
+		</select>
+		<br>
+		<label for="1+">Precio Opción 1: 1209 €</label> <br>
+		<label for="2+">Precio Opción 2: 1329 €</label>
+	</div>
+	
+	<div class="modelo">
+		<h2>Samsung Galaxy S23 Ultra</h2>
+		<img src="public/S23Ultra.jpg" alt="S23"> <br>
+		<label for="samsung3">Almacenamiento:</label>
+		<select name="" id="opcion-SUltra">
+			<option value="1U">8GB | 256GB</option>
+			<option value="2U">12GB | 512GB</option>
+			<option value="3U">12GB | 1TB</option>
+		</select>
+		<br>
+		<label for="1U">Precio Opción 1: 1.409 €</label><br>
+		<label for="2U">Precio Opción 2: 1.589 €</label><br>
+		<label for="3U">Precio Opción 3: 1.727 €</label>
+	</div>
+	</div>
+		<!-- <ul role="list" class="link-card-grid"> -->
+		<!-- </ul> -->
+		<Footer></Footer>
+	</main>
+</Layout>
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+	 .Modelos{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.modelo{
+		text-align: center;
+		margin-bottom: 2rem;
+	} 
+	h2{
+		font-size: large;
+	}
+	.modelo img{
+		max-width: 300px;
+		height: 200px;
+	}	
+</style>

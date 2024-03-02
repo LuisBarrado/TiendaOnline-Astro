@@ -1,0 +1,30 @@
+---
+import Card from "./Card.astro";
+---
+
+<h1><span class="text-gradient">Análisis</span></h1>
+			<Card
+				href="src/components/SamsungGalaxyS23.astro"
+				title="Samsung galaxy S23"
+				body="El buen perfume siempre se vende en frasco pequeño."
+			/>
+			<Card
+				href="src/components/SamsungGalaxyS23+.astro"
+				title="Samsung Galaxy S23+"
+				body="La batería y la fluidez dignas de un buen Galaxy."
+			/>
+			<Card
+				href="src/components/SamsungGalaxyS23Ultra.astro"
+				title="Samsung Galaxy S23 Ultra"
+				body="Este si es un Samsung que se lleva esperando desde hace años."
+			/>
+
+            <style>
+        .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+            </style>
